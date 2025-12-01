@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-press: 'Press Start 2P', var(--font-mono);
+}
+
+@theme {
+  --color-my-black: #222;
+  --color-my-white: #eee;
+}
+
+@layer components {
+  .banner {
+    @apply cursor-pointer bg-my-white text-base text-my-black;
+  }
+}
